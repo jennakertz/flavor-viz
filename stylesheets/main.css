@@ -1,0 +1,256 @@
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Merriweather', serif; */
+
+
+body {
+    /* padding: 25px; */
+    display:flex;
+    background-color: #fcfcfc;
+    flex-direction: column;
+}
+
+h3{
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    padding: 10px 5px 10px 5px;
+    color: #4e4e4e;
+}
+
+h2{
+    font-family: 'Inconsolata', monospace;
+    font-size:32px;
+    padding: 12px 25px 8px 25px;
+    color:#EF476F;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    padding: 10px 5px 10px 5px;
+    color: #4e4e4e;
+}
+
+p text{
+    font-family: 'Inconsolata', monospace;
+    color: #4e4e4e;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    width:100vw;
+    height:100vh;
+}
+
+.container .viz {
+    order:1;
+    position: absolute;
+}
+
+.container .recipes {
+    order:2;
+    position: static;
+}
+
+.details-sub{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    padding:15px;
+}
+
+#stats-box{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.box{
+    width:25%;
+    max-height:50%;
+    margin: 5px 3% 5px 0px;
+    flex-direction:column;
+    justify-content:center;
+    /* background-color: transparent; */
+}
+
+.box p{
+    text-align:center;
+    font-family: 'Inconsolata', monospace;
+    color: #4e4e4e;    
+}
+
+.box h2{
+    text-align:center;
+    font-family: 'Inconsolata', monospace;
+    font-size:32px;
+    padding: 12px 25px 8px 25px;
+    color:#EF476F;
+}
+
+/* CONDITIONAL */
+
+.hide{
+    display:none;
+}
+
+/* SVG */
+
+path { 
+    stroke-width: 2;
+}
+
+.line {
+    stroke-width: 2;
+}
+
+.js-axis path {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.js-axis g {
+    visibility: hidden;
+}
+
+.flavor-wheel {
+    padding:25px;
+    order:1;
+    position: absolute;
+    width: 50%;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.show-elements{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.vector {
+    height: 200px;
+}
+
+div.flavor-wheel {
+    pointer-events:none;
+}
+
+svg {
+    /* center the svg elements vertically by adding the */
+    /* same padding height as the svg container height */
+    padding-top:50px;
+    position:absolute;
+    fill:none;
+    pointer-events:none;
+}
+
+svg circle {
+    pointer-events: all;
+}
+
+svg path {
+    pointer-events:all;
+}
+
+.svg-nodelink {
+    padding-top: 0px;
+    /* padding-left */
+}
+
+.btn {
+    height:40px;
+    width:auto;
+    border-width:2px;
+    border-radius:13px;
+    border-color: #06D6A0;
+    border-style:solid;
+    border-image:none;
+    margin: 3px 3px 3px 3px;
+    background-color:transparent;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    color: #4e4e4e;
+}
+
+.btnClicked{
+    height:40px;
+    width:auto;
+    border-width:2px;
+    border-radius:13px;
+    border-style:solid;
+    border-image:none;
+    margin: 3px 3px 3px 3px;
+    background-color:#75D6BC;
+    border-color:transparent;
+    color:white;
+    outline:none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+}
+
+button .active-course {
+    background-color:#75D6BC;
+    border-color:transparent;
+    color:white;
+}
+
+.btn:hover{
+    background-color:#75D6BC;
+    border-color:transparent;
+    color:white;
+    transition:.75s;
+}
+
+
+/* FLAVOR WHEEL */
+
+/* 12 oclock */
+.js-salty {
+    transform: rotate(-90deg) translate(150px, 0);
+}
+
+/* 6 oclock */
+.js-sweet {
+    transform: rotate(90deg) translate(150px, 0);
+}
+
+/* 10 oclock */
+.js-bitter {
+    transform: rotate(-150deg) translate(150px, 0);
+}
+
+/* 4 oclock */
+.js-meaty {
+    transform: rotate(30deg) translate(150px, 0);
+}
+
+
+.js-sour {
+    transform: rotate(150deg) translate(150px, 0);
+}
+
+.js-piquant {
+    transform: rotate(-30deg) translate(150px,0);
+}
+
+
+/* DETAILS */
+
+.details{
+    padding:25px;
+    order:2;
+    width: 40%;
+    height: 100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction:column;
+}
