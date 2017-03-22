@@ -433,7 +433,7 @@ $(document).ready(function(){
 
     // get json data from the nodemap file, which maps relations between
     // source and target nodes 
-    $.getJSON("https://github.com/jennakertz/flavor-viz/blob/master/js/nodes.json", function(json) {
+    $.getJSON("https://raw.githubusercontent.com/jennakertz/flavor-viz/master/js/nodes.json", function(json) {
 	// console.log(json); // this will show the info it in firebug console
 	nodeMap = json.links
     });
