@@ -1,0 +1,21 @@
+{
+    "links": [{
+		"source": ".js-node-salty",
+		"target": ".js-node-piquant"
+	}, {
+		"source": ".js-node-piquant",
+		"target": ".js-node-meaty"
+	}, {
+		"source": ".js-node-meaty",
+		"target": ".js-node-sweet"
+	}, {
+		"source": ".js-node-sweet",
+		"target": ".js-node-sour"
+	}, {
+		"source": ".js-node-sour",
+		"target": ".js-node-bitter"
+	}, {
+		"source": ".js-node-bitter",
+		"target": ".js-node-salty"
+	}]
+}
